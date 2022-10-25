@@ -1,0 +1,33 @@
+.button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  body{
+    background-color: azure;
+  }
+  .question{
+    background-color: rgb(179, 205, 205);
+    margin: auto;
+    padding: 10px 20px;
+    border: #008CBA;
+    height: 100%;
+    width: 40%;;
+  }

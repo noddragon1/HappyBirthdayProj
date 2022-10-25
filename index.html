@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>งานด่วน!!!!</h1>
+        <h2>เว็บนี้จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของวิชา Happy BirthDay เท่านั้น</h2>
+        <h3>เนื้อหาต่อไปนี้เป็นเนื้อหาทั่วไปสามารถรับชมได้ทุกวัย</h3>
+        <div class="question">
+            <p>กรุณาตอบคำถามต่อไปนี้ก่อนไปยังหน้าถัดไป "คนทำหล่อมั๊ย ?"</p>
+            <input type="radio" id="้hs1" name="handsome" value="10" checked>
+            <label for="age1">ไม่หล่อ</label>
+            <input type="radio" id="hs2" name="handsome" value="20">
+            <label for="age2">เฉยๆ</label>
+            <input type="radio" id="hs3" name="handsome" value="30">
+            <label for="age3">หล่อก็ได้</label>
+            <input type="radio" id="hs4" name="handsome" value="40">
+            <label for="age3">หล่อที่สุด</label><br><br>
+            <button class="button button2" onclick="myFunction()">ไปโลดด</button>
+        </div>
+    </center>
+    <script>
+        var count = 0;
+        function myFunction() {
+            var x = document.querySelector('input[name="handsome"]:checked').value;
+
+            console.log(x)
+            if (x == 10) {
+                alert("ไม่น่าใช่นะ ลองคิดดูใหม่นะ")
+                count++
+            }
+            else if (x == 20) {
+                alert('ยังตอบไม่ถูกนะ ลองคิดดูอีกที')
+                count++
+            }
+            else if (x == 30) {
+                alert("เกือบถูกละ ลองคิดดีๆอีกนิดนึง")
+                count++
+            }
+            else if (x == 40) {
+                count--
+                alert('ว้าว เก่งมากตอบถูกด้วย')
+                window.location.href = 'main.html';
+            }
+            if (count == 2) {
+                alert('ระดับคุณแล้วอ่ะ แค่ตอบความจริงมาก็ถูกแล้วป่ะ5555')
+            }
+
+        }
+    </script>
+</body>
+
+</html>
